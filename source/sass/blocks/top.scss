@@ -1,0 +1,101 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 573px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 17px 0 116px;
+  color: $color-light;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: -1;
+
+  @include vp-1023 {
+    padding: 56px 0 137px;
+    min-height: 581px;
+  }
+
+  @include vp-767 {
+    padding: 80px 4.7% 88px;
+    min-height: 506px;
+  }
+}
+
+.top__container-desc {
+  padding: 0 100px 0 198px;
+  max-width: $vp-1366;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  z-index: 100;
+
+  @include vp-1023 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.top h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 66px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 11px;
+  }
+}
+
+.top p {
+  margin: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+.top__image {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background-color: $color-background;
+}
+
+.top__image img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include vp-1023 {
+    object-fit: cover;
+  }
+}

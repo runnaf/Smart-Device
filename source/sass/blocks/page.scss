@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page.is-stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
