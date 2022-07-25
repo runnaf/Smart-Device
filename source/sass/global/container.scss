@@ -1,26 +1,20 @@
 .container {
-  width: 100%;
-  max-width: $vp-1366;
+  width: 63.7%;
+  max-width: 1221px;
   margin: 0 auto;
-  padding: 120px 103px;
   z-index: 100;
 
   @include vp-1023 {
-    padding: 90px 45px;
+    width: 87.01%;
   }
 
   @include vp-767 {
-    padding: 65px 4.7%;
+    width: 84.8%;
   }
 }
 
 .container h2 {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.5;
-
-  @include vp-1023 {
-    font-size: 26px;
-    line-height: 1.4;
-  }
+  font-weight: normal;
+  font-size: 2.25em;
+  line-height: 1.4;
 }

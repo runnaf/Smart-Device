@@ -1,0 +1,139 @@
+.about {
+  padding-top: 103px;
+  padding-bottom: 102px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include vp-1023 {
+    padding-bottom: 80px;
+    padding-top: 76px;
+  }
+
+  @include vp-767 {
+    padding-top: 47px;
+  }
+}
+
+.about__container-desc {
+  padding-left: 101px;
+
+  @include vp-1023 {
+    padding-left: 29px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
+}
+
+.about h2 {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-Roboto-Condensed;
+  font-weight: normal;
+  font-size: 2.25em;
+  line-height: 1.4;
+  color: $color-default-black;
+  margin-bottom: 13px;
+
+  @include vp-767 {
+    font-size: 1.75em;
+  }
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 21px;
+  color: $color-default-black;
+  line-height: 1.34;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 21px;
+  }
+
+  @include vp-767 {
+    font-size: 0.88em;
+    margin-bottom: 19px;
+  }
+}
+
+.about__container-hidden {
+  display: none;
+}
+
+.about a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 45px;
+  min-width: 180px;
+  width: max-content;
+  padding: 10px 14px;
+  margin-top: 41px;
+  background-color: $color-transparent;
+  border: 1px solid $color-default-blue;
+  border-radius: 3px;
+  color: $color-default-blue;
+  font-family: $ff-Roboto-Condensed;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.88em;
+  line-height: 1.15;
+  user-select: none;
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.3;
+
+  &[href] {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.5;
+    }
+  }
+
+  @include vp-1023 {
+    margin-top: -1px;
+  }
+
+  @include vp-767 {
+    margin-top: -6px;
+    min-height: 35px;
+    min-width: 160px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.about__image {
+  order: -1;
+  height: auto;
+  min-width: 150px;
+  align-self: center;
+  margin-top: 17px;
+
+  @include vp-1023 {
+    margin-top: 4px;
+    margin-left: -4px;
+    align-self: flex-start;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__container-desc span {
+  @include vp-767 {
+    display: none;
+  }
+}

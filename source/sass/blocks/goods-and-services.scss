@@ -1,0 +1,224 @@
+.goods-and-services {
+  padding-top: 65px;
+  padding-bottom: 141px;
+  background-color: $color-default-black;
+
+  @include vp-1023 {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
+  @include vp-767 {
+    padding-top: 47px;
+    padding-bottom: 86px;
+  }
+}
+
+.goods-and-services h2 {
+  margin: 0;
+  margin-bottom: 52px;
+  font-family: $ff-Roboto-Condensed;
+  font-size: 2.25em;
+  line-height: 1.41;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    font-size: 1.75em;
+    margin-bottom: 28px;
+    width: 80%;
+  }
+}
+
+.goods-and-services ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 85px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1023 {
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.goods-and-services li {
+  min-width: 350px;
+  min-height: 650px;
+
+  @include vp-1023 {
+    min-width: 100%;
+    min-height: 250px;
+  }
+}
+
+.goods-and-services a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 47px 0 0 41px;
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.3;
+
+  &[href] {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.5;
+    }
+  }
+
+  @include vp-1023 {
+    padding: 37px 0 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 26px 0 0 30px;
+  }
+}
+
+.goods-and-services img {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-1023 {
+    object-fit: none;
+  }
+}
+
+.goods-and-services__container-img-one img {
+  overflow: hidden;
+  object-position: -167px;
+
+  @include vp-1023 {
+    object-position: 34% 100%;
+  }
+
+  @include vp-767 {
+    object-position: -481px -343px;
+  }
+}
+
+.goods-and-services__container-img-two img {
+  overflow: hidden;
+  object-position: 47%;
+
+  @include vp-1023 {
+    object-position: 80% 60%;
+  }
+
+  @include vp-767 {
+    object-position: -489px -586px;
+  }
+}
+
+.goods-and-services__container-img-three img {
+  overflow: hidden;
+  object-position: 79%;
+
+  @include vp-1023 {
+    object-position: 21% 62%;
+  }
+
+  @include vp-767 {
+    object-position: -1177px -447px;
+  }
+}
+
+.goods-and-services h3 {
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  font-weight: normal;
+  max-width: 55%;
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-family: $ff-Roboto-Condensed;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    width: 24%;
+  }
+
+  @include vp-767 {
+    width: 50%;
+    font-size: 1.13em;
+    line-height: 1.67;
+  }
+}
+
+.goods-and-services__cart-button {
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  background-color: $color-default-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  @include vp-767 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.goods-and-services svg {
+  fill: none;
+  stroke: $color-default-white;
+  width: 8px;
+  height: auto;
+
+  @include vp-1023 {
+    padding-left: 4px;
+  }
+
+  @include vp-767 {
+    width: 5px;
+  }
+}
+
+.goods-and-services__container-title-mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.goods-and-services__container-title-desktop {
+  @include vp-767 {
+    display: none;
+  }
+}

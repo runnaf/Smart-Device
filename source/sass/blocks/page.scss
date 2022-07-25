@@ -1,10 +1,18 @@
 .page {
   display: flex;
   flex-direction: column;
+  margin: 0;
   min-height: 100vh;
+  min-width: 320px;
+  font-family: $ff-PT-Mono;
+  font-weight: normal;
+  font-size: $fz-default;
+  color: $color-light;
+  background-color: $color-default-light;
+  position: relative;
 }
 
 .page.is-stop-scrolling {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
