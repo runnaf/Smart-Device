@@ -17,45 +17,46 @@
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page">
+    <header data-header="header" class="prime-header">
+      <div class="prime-header__container container">
+        <div class="prime-header__logo">
+          <a>
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/svg/logo-desktop.svg">
+              <img src="./img/svg/logo-mobile.svg" alt="Логотип сайта 'Smart-Device'" width="35" height="35">
+            </picture>
+          </a>
+        </div>
+        <nav class="prime-header__nav">
+          <ul>
+            <li>
+                <a href="#">
+                  <svg width="20" height="20">
+                    <use href="img/sprite.svg#mail"></use>
+                  </svg>
+                  <span>info@sd.ru</span>
+                </a>
+            </li>
+            <li>
+              <a href="tel:+74950005252">
+                <svg width="20" height="20">
+                  <use href="img/sprite.svg#phone"></use>
+                </svg>
+                <span>+7 (495) 000 52 52</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="prime-header__container-link">
+          <a href="#" data-modal-opened>Заказать звонок</a>
+        </div>
+      </div>
+    </header>
     <main class="page-main">
       <h1 class="visually-hidden">Печатные платы 'Smart-Device'</h1>
       <section class="prime" data-prime-container="prime-container">
         <h2 class="visually-hidden">Меню и логотип сайта 'Smart-Device'</h2>
-        <header data-header="header">
-          <div class="prime-header container">
-            <div class="prime-header__logo">
-              <a>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="./img/svg/logo-desktop.svg">
-                  <img src="./img/svg/logo-mobile.svg" alt="Логотип сайта 'Smart-Device'" width="35" height="35">
-                </picture>
-              </a>
-            </div>
-            <nav class="prime-header__nav">
-              <ul>
-                <li>
-                    <a href="#">
-                      <svg width="20" height="20">
-                        <use href="img/sprite.svg#mail"></use>
-                      </svg>
-                      <span>info@sd.ru</span>
-                    </a>
-                </li>
-                <li>
-                  <a href="tel:+7-495-000-52-52">
-                    <svg width="20" height="20">
-                      <use href="img/sprite.svg#phone"></use>
-                    </svg>
-                    <span>+7 (495) 000 52 52</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="prime-header__container-link">
-              <a href="#" data-modal-opened>Заказать звонок</a>
-            </div>
-          </div>
-        </header>
+
         <div class="prime__container-desc container" data-prime>
           <h2>Печатные платы</h2>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
@@ -66,7 +67,7 @@
         </div>
         <div class="prime__image">
           <picture>
-            <source media="(min-width: 1024px)" srcset="./img/content/prime.webp 1x, ./img/content/prime@2x.webp 2x" type="image/webp">
+            <source srcset="./img/content/prime.webp 1x, ./img/content/prime@2x.webp 2x" type="image/webp">
             <!-- 1х: 1024px; 2x: 2048px -->
             <img src="./img/content/prime.jpg" srcset="./img/content/prime@2x.jpg 2x" alt="печатные платы" width="1920" height="880">
           </picture>
@@ -128,7 +129,7 @@
         </div>
         <div class="about__image">
           <picture>
-            <source media="(min-width: 1024px)" srcset="./img/content/about.webp 1x, ./img/content/about@2x.webp 2x" type="image/webp">
+            <source srcset="./img/content/about.webp 1x, ./img/content/about@2x.webp 2x" type="image/webp">
             <!-- 1х: 150px; 2x: 300px -->
             <img src="./img/content/about.png" srcset="./img/content/about@2x.png 2x" alt="2022" width="150" height="320">
           </picture>
@@ -146,13 +147,12 @@
                 <h3>Производство печатных плат</h3>
                 <div class="goods-and-services__container-img-one">
                   <picture>
-                    <source media="(min-width: 1024px)" srcset="./img/content/prime.webp 1x, ./img/content/prime@2x.webp 2x" type="image/webp">
+                    <source srcset="./img/content/prime.webp 1x, ./img/content/prime@2x.webp 2x" type="image/webp">
                     <!-- 1х: 1024px; 2x: 2048px -->
                     <img src="./img/content/prime.jpg" srcset="./img/content/prime@2x.jpg 2x" alt="печатные платы" width="1920" height="880">
                   </picture>
                 </div>
                 <div class="goods-and-services__cart-button">
-                  <span class="visually-hidden">перейти на страницу производство печатных плат</span>
                   <svg width="8" height="4">
                     <use href="img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -164,13 +164,12 @@
                 <h3>Монтаж печатных плат</h3>
                 <div class="goods-and-services__container-img-two">
                   <picture>
-                    <source media="(min-width: 1024px)" srcset="./img/content/prime.webp 1x, ./img/content/prime@2x.webp 2x" type="image/webp">
+                    <source srcset="./img/content/prime.webp 1x, ./img/content/prime@2x.webp 2x" type="image/webp">
                     <!-- 1х: 1024px; 2x: 2048px -->
                     <img src="./img/content/prime.jpg" srcset="./img/content/prime@2x.jpg 2x" alt="печатные платы" width="1920" height="880">
                   </picture>
                 </div>
                 <div class="goods-and-services__cart-button">
-                  <span class="visually-hidden">перейти на страницу монтаж печатных плат</span>
                   <svg width="8" height="4">
                     <use href="img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -182,13 +181,12 @@
                 <h3>Комплектующие для&nbsp;светотехники</h3>
                 <div class="goods-and-services__container-img-three">
                   <picture>
-                    <source media="(min-width: 1024px)" srcset="./img/content/prime.webp 1x, ./img/content/prime@2x.webp 2x" type="image/webp">
+                    <source srcset="./img/content/prime.webp 1x, ./img/content/prime@2x.webp 2x" type="image/webp">
                     <!-- 1х: 1024px; 2x: 2048px -->
                     <img src="./img/content/prime.jpg" srcset="./img/content/prime@2x.jpg 2x" alt="печатные платы" width="1920" height="880">
                   </picture>
                 </div>
                 <div class="goods-and-services__cart-button">
-                  <span class="visually-hidden">перейти на страницу комплектующие для светотехники</span>
                   <svg width="8" height="4">
                     <use href="img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -222,7 +220,7 @@
         </div>
         <div class="form__image">
           <picture>
-            <source media="(min-width: 1024px)" srcset="./img/content/paper-airplane.webp 1x, ./img/content/paper-airplane@2x.webp 2x" type="image/webp">
+            <source srcset="./img/content/paper-airplane.webp 1x, ./img/content/paper-airplane@2x.webp 2x" type="image/webp">
             <!-- 1х: 510px; 2x: 1020px -->
             <img src="./img/content/paper-airplane.png" srcset="./img/content/paper-airplane@2x.png 2x" alt="бумажный самолетик" width="510" height="285">
           </picture>
@@ -318,17 +316,17 @@
                 г. Мытищи, Олимпийский проспект, д.10
               </li>
               <li>
-                <a href="tel:+7-495-589-40-50" data-footer-link="footer-link">
+                <a href="tel:+74955894050" data-footer-link="footer-link">
                   +7 (495) 589-40-50
                 </a>
               </li>
               <li>
-                <a href="tel:+7-495-389-58-29" data-footer-link="footer-link">
+                <a href="tel:+74953895829" data-footer-link="footer-link">
                   +7 (925) 389-58-29
                 </a>
               </li>
               <li>
-                <a href="tel:+7-495-364-78-13" data-footer-link="footer-link">
+                <a href="tel:+74953647813" data-footer-link="footer-link">
                   +7 (925) 364-78-13
                 </a>
               </li>

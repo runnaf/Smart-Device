@@ -8,32 +8,6 @@
   width: 100%;
 }
 
-.prime header {
-  position: relative;
-  width: 100%;
-  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  padding-top: 30px;
-  padding-bottom: 35px;
-  z-index: 200;
-
-  @include vp-1023 {
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 25px;
-  }
-
-  @include vp-767 {
-    padding-top: 15px;
-    padding-bottom: 20px;
-    margin: 0;
-  }
-}
-
-.prime header.is-fixed {
-  position: fixed;
-  left: 0;
-  top: 0;
-}
 
 .prime__container-desc {
   padding-left: 126px;
@@ -106,6 +80,7 @@
   left: 0;
   top: 0;
   z-index: -1;
+  margin-top: -6%;
 }
 
 .prime__image img {

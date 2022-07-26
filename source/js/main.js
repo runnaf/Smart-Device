@@ -1,7 +1,6 @@
 import {openingMenu} from './modules/menu';
 import {scrolling} from './modules/scroll';
 import {storingFormData} from './modules/form-data';
-import {headerScrolling} from './modules/scroll-header';
 import {openingModal} from './modules/opening-modal';
 import {getMoreAbout} from './modules/more-about';
 import {getMaskForPhone} from './modules/maskForPhone';
@@ -14,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
   openingMenu();
 
   // Scroll
-  headerScrolling();
 
   scrolling();
 

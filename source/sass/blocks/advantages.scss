@@ -94,7 +94,9 @@
 }
 
 .advantages .advantages__tag > svg {
-  margin-bottom: 4px;
+  @include vp-1023 {
+    margin-bottom: 4px;
+  }
 
   @include vp-767 {
     margin-bottom: 12px;
@@ -114,7 +116,9 @@
 }
 
 .advantages .advantages__tag > h3 {
-  margin-bottom: 6px;
+  @include vp-1023 {
+    margin-bottom: 6px;
+  }
 
   @include vp-767 {
     margin-bottom: 12px;

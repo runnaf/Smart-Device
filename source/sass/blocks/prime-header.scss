@@ -1,4 +1,24 @@
 .prime-header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 500;
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  @include vp-1023 {
+    position: static;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+.prime-header__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
