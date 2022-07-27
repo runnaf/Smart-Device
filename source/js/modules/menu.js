@@ -1,28 +1,29 @@
 const openingMenu = () => {
-  const menuBtns = document.querySelectorAll('[data-footer-button]');
-  const menuBtnsContainer = document.querySelectorAll('[data-footer-container]');
+  const menuLinks = document.querySelectorAll('[data-footer-link-main]');
+  const menuLinksContainer = document.querySelectorAll('[data-footer-container]');
   const menuLinkFooter = document.querySelectorAll('[data-footer-link]');
 
-  if (menuBtnsContainer.length > 0 && menuBtnsContainer !== null) {
-    menuBtnsContainer.forEach((item)=>{
+  if (menuLinksContainer.length > 0 && menuLinksContainer !== null) {
+    menuLinksContainer.forEach((item)=>{
       item.classList.add('is-js');
     });
   }
 
-  if (menuBtns.length > 0 && menuBtns !== null) {
-    menuBtns.forEach((btn)=>{
-      btn.addEventListener('click', function (e) {
-        e.target.closest('button').classList.add('is-js');
-        if (btn.classList.contains('is-js')) {
-          if (btn.classList.contains('is-open')) {
-            btn.classList.remove('is-open');
+  if (menuLinks.length > 0 && menuLinks !== null) {
+    menuLinks.forEach((Link)=>{
+      Link.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.target.closest('a').classList.add('is-js');
+        if (Link.classList.contains('is-js')) {
+          if (Link.classList.contains('is-open')) {
+            Link.classList.remove('is-open');
           } else {
-            menuBtns.forEach((btnItem) => {
-              btnItem.classList.remove('is-open');
+            menuLinks.forEach((LinkItem) => {
+              LinkItem.classList.remove('is-open');
             });
-            btn.classList.add('is-open');
+            Link.classList.add('is-open');
           }
-          btn.classList.remove('is-js');
+          Link.classList.remove('is-js');
         }
       });
     });
@@ -32,8 +33,8 @@ const openingMenu = () => {
     menuLinkFooter.forEach((link) => {
       link.addEventListener('click', (evt)=>{
         evt.preventDefault();
-        menuBtns.forEach((btn)=>{
-          btn.classList.remove('is-open');
+        menuLinks.forEach((linkItem)=>{
+          linkItem.classList.remove('is-open');
         });
       });
     });

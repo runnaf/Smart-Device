@@ -15,8 +15,7 @@ const storingFormData = () => {
   }
 
   function getDataForm(formName, fieldsName, checkboxName) {
-    formName.addEventListener('submit', (evt) => {
-      evt.preventDefault();
+    formName.addEventListener('submit', () => {
       fieldsName.forEach((field) => {
         localStorage.setItem(field.name, field.value);
       });

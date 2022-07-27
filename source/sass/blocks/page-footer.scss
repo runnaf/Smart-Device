@@ -27,14 +27,14 @@
 }
 
 .page-footer__container-logo {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 
   @include vp-1023 {
     margin-bottom: 0;
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-right: 5px;
   }
 }
@@ -47,13 +47,13 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 29px;
+    margin-bottom: 23px;
     width: 100%;
     flex-wrap: wrap;
   }
 
   @include vp-767 {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     justify-content: center;
   }
 }
@@ -62,6 +62,8 @@
   opacity: 0.3;
   cursor: default;
   pointer-events: none;
+  width: 100%;
+  height: 100%;
 
   &[href] {
     opacity: 1;
@@ -73,6 +75,14 @@
       opacity: 0.7;
     }
   }
+}
+
+.page-footer__logo-social > ul a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-footer__container-logo a {
@@ -91,7 +101,11 @@
 .page-footer__logo-social ul {
   display: flex;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 10px;
+
+  @include vp-1023 {
+    margin-right: -6px;
+  }
 
   @include vp-767 {
     width: 100%;
@@ -101,7 +115,7 @@
 }
 
 .page-footer__logo-social li {
-  margin-right: 26px;
+  margin-right: 15px;
 
   &:last-child {
     margin-right: 0;
@@ -112,8 +126,12 @@
   flex: 1;
   display: flex;
   justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 9px;
   flex-wrap: wrap;
+
+  @include vp-1023 {
+    margin-top: 0;
+  }
 
   @include vp-767 {
     position: relative;
@@ -228,23 +246,37 @@
 }
 
 .page-footer__sections ul {
-  display: flex;
-  flex-direction: column;
-  max-height: 152px;
-  flex-wrap: wrap;
-  margin-right: 34px;
+  columns: 2;
+  list-style: none;
+
 
   @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 0;
     max-width: 240px;
     max-height: 100%;
   }
+
+  @include vp-767 {
+    columns: 1;
+  }
 }
 
-.page-footer__sections li {
+.page-footer__sections ul > li {
   max-width: 210px;
   width: fit-content;
-  margin-right: 40px;
+  margin-right: 24px;
+
+  &:last-child {
+    margin-bottom: 44px;
+  }
+
+  @include vp-1769 {
+    margin-right: 5px;
+  }
+
 
   @include vp-1023 {
     width: fit-content;
@@ -257,38 +289,59 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 18px;
+  }
+}
+
+.page-footer__title-container > a {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.94em;
+  line-height: 1.07;
+  letter-spacing: 0.05em;
+  min-height: 38px;
+  display: block;
+  font-family: $ff-Roboto-Condensed;
+
+  &::after,
+  &::before {
+    display: none;
+  }
+
+  @include vp-1023 {
+    min-height: fit-content;
+    padding: 15px 0;
+    margin-bottom: 8px;
+  }
+
+  @include vp-767 {
+    min-height: 60px;
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 24px;
     padding-bottom: 15px;
   }
 }
 
-.page-footer__title-container button {
-  display: none;
-}
-
-.page-footer__title-container.is-js button {
+.page-footer__title-container.is-js > a {
   @include vp-767 {
     position: relative;
     display: block;
-    width: 20px;
-    height: 20px;
     background-color: $color-transparent;
     border: none;
     outline: none;
     cursor: pointer;
-    margin-bottom: 7px;
 
     &::after,
     &::before {
+      display: block;
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: 5px;
+      right: 2px;
       top: 0;
-      left: 0;
       width: 15px;
       height: 1px;
       background-color: #c4c4c4;
-      margin: auto;
+      margin: auto 0;
       content: "";
     }
 
@@ -298,7 +351,7 @@
   }
 }
 
-.page-footer__title-container button.is-open {
+.page-footer__title-container > a.is-open {
   @include vp-767 {
     &::before {
       display: none;
@@ -310,6 +363,8 @@
   @include vp-767 {
     width: 100%;
     flex: 1;
+    margin-top: -16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -320,7 +375,7 @@
 }
 
 
-.page-footer__title-container button.is-open + ul {
+.page-footer__title-container a.is-open + ul {
   @include vp-767 {
     display: block;
   }

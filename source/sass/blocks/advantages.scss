@@ -35,7 +35,6 @@
   padding: 40px 45px;
   color: $color-default-blue;
   background-color: $color-transparent;
-  cursor: pointer;
   min-height: 300px;
   border: 1px solid #ebebeb;
 
@@ -49,8 +48,7 @@
     content: "";
   }
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     background-color: $color-default-blue;
     color: $color-default-light;
   }

@@ -36,8 +36,8 @@ const getMaskForPhone = () => {
       return;
     }
 
-    if (['7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
-      if (Number(inputNumbersValue[0]) === 9) {
+    if (['4', '7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
+      if (Number(inputNumbersValue[0]) === 9 || Number(inputNumbersValue[0]) === 4) {
         inputNumbersValue = '7' + inputNumbersValue;
       }
       let firstSymbols = (Number(inputNumbersValue[0]) === 8) ? '8' : '+7';

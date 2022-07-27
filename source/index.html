@@ -30,7 +30,7 @@
         <nav class="prime-header__nav">
           <ul>
             <li>
-                <a href="#">
+                <a href="mailto:info@sd.ru">
                   <svg width="20" height="20">
                     <use href="img/sprite.svg#mail"></use>
                   </svg>
@@ -77,25 +77,25 @@
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul>
-            <li tabindex="0">
+            <li>
               <div class="advantages__timer">
                 <svg width="35" height="35">
                   <use href="img/sprite.svg#timer"></use>
                 </svg>
                 <h3>Оперативные сроки</h3>
-                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
               </div>
             </li>
-            <li tabindex="0">
+            <li>
               <div class="advantages__hired">
                 <svg width="35" height="35">
                   <use href="img/sprite.svg#hired"></use>
                 </svg>
                 <h3>Крупные поставщики</h3>
-                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспичивает хорошее качество нашей продукции.</p>
               </div>
             </li>
-            <li tabindex="0">
+            <li>
               <div class="advantages__detective">
                 <svg width="35" height="35">
                   <use href="img/sprite.svg#detective"></use>
@@ -104,13 +104,13 @@
                 <p>По желанию клиента&nbsp;&nbsp;мы обеспечиваем полную конфеденциальность.</p>
               </div>
             </li>
-            <li tabindex="0">
+            <li>
               <div class="advantages__tag">
                 <svg width="35" height="35">
                   <use href="img/sprite.svg#tag"></use>
                 </svg>
                 <h3>Персонализация стоимости</h3>
-                <p>Мы&nbsp;&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+                <p>Мы&nbsp;&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
               </div>
             </li>
           </ul>
@@ -202,7 +202,7 @@
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
             <form action="https://echo.htmlacademy.ru/" method="post" data-form>
-              <input type="text" placeholder="Имя" name="user_name" minlength="1" pattern="^[а-яА-ЯёЁa-zA-Z]+$" data-field required>
+              <input type="text" placeholder="Имя" name="user_name" minlength="1" pattern="^[а-яА-ЯёЁa-zA-Z \-]+$" data-field required>
               <input type="tel" placeholder="Телефон" name="phone" maxlength="19" data-field data-phone required>
               <textarea placeholder="Ваш вопрос" name="textarea" data-field></textarea>
               <button type="submit">Задать вопрос</button>
@@ -226,7 +226,7 @@
           </picture>
         </div>
       </section>
-    </main>
+    </main >
     <footer class="page-footer">
       <div class="page-footer__container container">
         <div class="page-footer__logo-social">
@@ -264,10 +264,7 @@
         </div>
         <nav class="page-footer__nav">
           <div class="page-footer__sections page-footer__title-container" data-footer-container="footer-container">
-            <h2>Разделы сайта</h2>
-            <button type="button" data-footer-button="footer-button">
-              <span class="visually-hidden"></span>
-            </button>
+            <a href="#" data-footer-link-main>Разделы сайта</a>
             <ul>
               <li>
                 <a href="#" data-footer-link="footer-link">
@@ -307,10 +304,9 @@
             </ul>
           </div>
           <div class="page-footer__office page-footer__title-container" data-footer-container="footer-container">
-            <h2>Наш офис</h2>
-            <button type="button" data-footer-button="footer-button">
-              <span class="visually-hidden"></span>
-            </button>
+            <a href="#" data-footer-link-main>
+              Наш офис
+            </a>
             <ul>
               <li>
                 г. Мытищи, Олимпийский проспект, д.10
@@ -341,12 +337,12 @@
           <h2>Закажите звонок</h2>
           <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <form action="https://echo.htmlacademy.ru/" method="post" data-form-modal>
-            <input tabindex = "1" type="text" autofocus = "autofocus" placeholder="Имя" name="user_name_modal" minlength="1" data-field-modal pattern="^[а-яА-ЯёЁa-zA-Z]+$" data-name-input data-field required>
-            <input type="tel" placeholder="Телефон" name="phone_modal" maxlength="18" data-field-modal data-phone required>
-            <textarea placeholder="Ваш вопрос" name="textarea" data-field-modal></textarea>
-            <button type="submit">отправить</button>
+            <input tabindex = "2" type="text" autofocus = "autofocus" placeholder="Имя" name="user_name_modal" minlength="1" data-field-modal pattern="^[а-яА-ЯёЁa-zA-Z \-]+$" data-name-input data-field required>
+            <input tabindex = "2" type="tel" placeholder="Телефон" name="phone_modal" maxlength="18" data-field-modal data-phone required>
+            <textarea tabindex = "2" placeholder="Ваш вопрос" name="textarea" data-field-modal></textarea>
+            <button tabindex = "2" type="submit">отправить</button>
             <div class="modal__checkbox-container">
-              <input type="checkbox" name="consent_modal" value="consent" id="consent-modal" class="visually-hidden" data-field-modal-checkbox checked required>
+              <input tabindex = "2" type="checkbox" name="consent_modal" value="consent" id="consent-modal" class="visually-hidden" data-field-modal-checkbox data-field-modal checked required>
               <label for="consent-modal">
                 <svg width="9" height="6">
                   <use href="img/sprite.svg#checked"></use>
@@ -355,7 +351,7 @@
               </label>
             </div>
           </form>
-          <button type="button" data-modal-closed="modal-closed">
+          <button tabindex = "2" type="button" data-modal-closed="modal-closed">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </div>
