@@ -59,7 +59,7 @@
 
         <div class="prime__container-desc container" data-prime>
           <h2>Печатные платы</h2>
-          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <p>производство и монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
           <a href="#form" data-link-form="link-form">
             <div>Получить бесплатную консультацию</div>
             <div>бесплатная консультация</div>
@@ -119,10 +119,10 @@
       <section class="about  container">
         <div class="about__container-desc">
           <h2>О компании</h2>
-          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span data-about-mobile="about-more-mobile">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997 года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span data-about-mobile="about-more-mobile">Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
           <div class="about__container-hidden" data-about="about-more">
-            <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
+            <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей&nbsp;день. На&nbsp;данный момент насчитывается более 14 офисов по всей стране и&nbsp;20 городов присутствия.</p>
             <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
           </div>
           <a href="#" data-about-link="about-link">Подробнее</a>
@@ -138,8 +138,8 @@
       <section class="goods-and-services">
         <div class="container">
           <h2>
-            <span class="goods-and-services__container-title-desktop">Smart Device предлагает следующие товары и услуги</span>
-            <span class="goods-and-services__container-title-mobile">Товары и услуги Smart Device</span>
+            <span class="goods-and-services__container-title-desktop">Smart Device предлагает следующие товары и&nbsp;услуги</span>
+            <span class="goods-and-services__container-title-mobile">Товары и&nbsp;услуги Smart Device</span>
           </h2>
           <ul>
             <li>
@@ -199,21 +199,23 @@
       <section class="form" data-form-container="form-container" id="form">
         <div class="container form__container">
           <div class="form__container-desc">
-            <h2>Остались вопросы? Задайте их нам!</h2>
+            <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
             <form action="https://echo.htmlacademy.ru/" method="post" data-form>
               <input type="text" placeholder="Имя" name="user_name" minlength="1" pattern="^[а-яА-ЯёЁa-zA-Z \-]+$" data-field required>
               <input type="tel" placeholder="Телефон" name="phone" maxlength="19" data-field data-phone required>
               <textarea placeholder="Ваш вопрос" name="textarea" data-field></textarea>
-              <button type="submit">Задать вопрос</button>
-              <div class="form__checkbox-container">
-                <input type="checkbox" name="consent" value="consent" id="consent" class="visually-hidden" data-field-checkbox="" checked required>
-                <label for="consent">
-                  <svg width="9" height="6">
-                    <use href="img/sprite.svg#checked"></use>
-                  </svg>
-                  <span>Я согласен на обработку персональных данных</span>
-                </label>
+              <div class="form-container-checkbox-button">
+                <div class="form__checkbox-container">
+                  <input type="checkbox" name="consent" value="consent" id="consent" class="visually-hidden" data-field-checkbox="" checked required>
+                  <label for="consent">
+                    <svg width="9" height="6">
+                      <use href="img/sprite.svg#checked"></use>
+                    </svg>
+                    <span>Я согласен на&nbsp;обработку персональных данных</span>
+                  </label>
+                </div>
+                <button type="submit">Задать вопрос</button>
               </div>
             </form>
           </div>
@@ -332,26 +334,28 @@
       </div>
     </footer>
     <div>
-      <div class="modal" data-modal="modal">
-        <div class="modal__container-desc">
+      <div class="modal" data-modal>
+        <div class="modal__container-desc" data-modal-container>
           <h2>Закажите звонок</h2>
-          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в&nbsp;удобное время</p>
           <form action="https://echo.htmlacademy.ru/" method="post" data-form-modal>
-            <input tabindex = "2" type="text" autofocus = "autofocus" placeholder="Имя" name="user_name_modal" minlength="1" data-field-modal pattern="^[а-яА-ЯёЁa-zA-Z \-]+$" data-name-input data-field required>
-            <input tabindex = "2" type="tel" placeholder="Телефон" name="phone_modal" maxlength="18" data-field-modal data-phone required>
-            <textarea tabindex = "2" placeholder="Ваш вопрос" name="textarea" data-field-modal></textarea>
-            <button tabindex = "2" type="submit">отправить</button>
-            <div class="modal__checkbox-container">
-              <input tabindex = "2" type="checkbox" name="consent_modal" value="consent" id="consent-modal" class="visually-hidden" data-field-modal-checkbox data-field-modal checked required>
-              <label for="consent-modal">
-                <svg width="9" height="6">
-                  <use href="img/sprite.svg#checked"></use>
-                </svg>
-                <span>Я согласен на обработку&nbsp;&nbsp;персональных данных</span>
-              </label>
+            <input type="text" autofocus = "autofocus" placeholder="Имя" name="user_name_modal" minlength="1" data-field-modal pattern="^[а-яА-ЯёЁa-zA-Z \-]+$" data-name-input data-field required>
+            <input type="tel" placeholder="Телефон" name="phone_modal" maxlength="18" data-field-modal data-phone required>
+            <textarea placeholder="Ваш вопрос" name="textarea" data-field-modal></textarea>
+            <div class="modal__container-checkbox-button">
+              <div class="modal__checkbox-container">
+                <input type="checkbox" name="consent_modal" value="consent" id="consent-modal" class="visually-hidden" data-field-modal-checkbox data-field-modal checked required>
+                <label for="consent-modal">
+                  <svg width="9" height="6">
+                    <use href="img/sprite.svg#checked"></use>
+                  </svg>
+                  <span>Я согласен на обработку&nbsp;&nbsp;персональных данных</span>
+                </label>
+              </div>
+              <button type="submit" data-modal-submit>отправить</button>
             </div>
           </form>
-          <button tabindex = "2" type="button" data-modal-closed="modal-closed">
+          <button type="button" data-modal-closed="modal-closed">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </div>

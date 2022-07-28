@@ -236,6 +236,10 @@
 .page-footer__sections {
   min-width: 450px;
 
+  @include vp-1869 {
+    min-width: fit-content;
+  }
+
   @include vp-1023 {
     min-width: 220px;
   }
@@ -249,6 +253,9 @@
   columns: 2;
   list-style: none;
 
+  @include vp-1869 {
+    columns: 1;
+  }
 
   @include vp-1023 {
     display: flex;
@@ -273,7 +280,7 @@
     margin-bottom: 44px;
   }
 
-  @include vp-1769 {
+  @include vp-1869 {
     margin-right: 5px;
   }
 

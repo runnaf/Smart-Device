@@ -20,6 +20,7 @@
   left: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
   top: 146px;
   width: 500px;
   min-height: 510px;
@@ -193,4 +194,13 @@
     cursor: default;
     pointer-events: none;
   }
+}
+
+.modal__container-checkbox-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__container-checkbox-button button {
+  order: -1;
 }

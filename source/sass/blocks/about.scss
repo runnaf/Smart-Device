@@ -66,6 +66,21 @@
   display: none;
 }
 
+.about__container-hidden p {
+  @include vp-1023 {
+    margin-bottom: 21px;
+  }
+
+  @include vp-767 {
+    font-size: 0.88em;
+    margin-bottom: 19px;
+  }
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
+
 .about a {
   display: flex;
   justify-content: center;

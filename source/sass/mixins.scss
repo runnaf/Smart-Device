@@ -5,6 +5,12 @@
 }
 
 // Desktop first
+@mixin vp-1869 {
+  @media (max-width: $vp-1870 - 1) {
+    @content;
+  }
+}
+
 @mixin vp-1769 {
   @media (max-width: $vp-1770 - 1) {
     @content;

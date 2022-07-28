@@ -3,21 +3,27 @@ const openingModal = () => {
   const buttonClosed = modal.querySelector('[data-modal-closed]');
   const buttonOpened = document.querySelector('[data-modal-opened]');
   const nameInput = document.querySelector('[data-name-input]');
+  const modalContainer = document.querySelector('[data-modal-container]');
 
-  if (modal !== null && buttonClosed !== null && buttonOpened !== null) {
+  if (modal !== null && buttonClosed !== null && buttonOpened !== null && modalContainer !== null) {
     buttonOpened.addEventListener('click', ()=>{
       modal.classList.add('is-active');
       nameInput.focus();
       document.body.classList.add('is-stop-scrolling');
+
+      if (modalContainer.offsetHeight > modal.offsetHeight) {
+        modal.style.overflow = 'scroll';
+      }
+
       const focusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-      const firstFocusableElement = modal.querySelectorAll(focusableElements)[0];
       const focusableContent = modal.querySelectorAll(focusableElements);
+      const firstFocusableElement = focusableContent[0];
       const lastFocusableElement = focusableContent[focusableContent.length - 1];
 
 
       document.addEventListener('keydown', function (e) {
-        let isTabPressed = e.key === 'Tab';
+        let isTabPressed = e.key.toUpperCase() === 'TAB';
 
         if (!isTabPressed) {
           return;
@@ -36,7 +42,6 @@ const openingModal = () => {
         }
       });
 
-      firstFocusableElement.focus();
 
       modal.addEventListener('click', (e) => {
         if (!e.target.closest('.modal__container-desc')) {
@@ -49,7 +54,7 @@ const openingModal = () => {
 
       if (modal.classList.contains('is-active')) {
         window.addEventListener('keydown', (e)=>{
-          if (e.key === 'Escape') {
+          if (e.key.toUpperCase() === 'ESCAPE') {
             closed();
           }
         });
